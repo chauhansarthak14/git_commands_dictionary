@@ -1,0 +1,43 @@
+Settings to configure your information and coding style
+    git --version
+        returns the current version of git on your OS
+    git config --global user.name "First Last"
+        This command is used to congfigure the name. "" are used because the name has space.
+    git config --global user.name email
+        This command is used to configure the email.
+    git config --global core.editor "code --wait"
+        This command will make the bash console wait until the editor closes.
+    git config --global core.autocrlf true
+        This command is used to set carriage return(\r) and line feed(\n) configure to sync
+        with other os users.
+    git config --global -e
+        This command is used to open the git configuration file.
+
+Git Workflow
+    [             PC                    ]     [    Githib    ]
+
+    Code --------- Staging Area/ Index ---------- Repository
+
+Commit Contains - Git is very efficient in storing content as it compresses it and doesn't store repeated data.
+    1. Unique Id/ revision no
+    2. Message
+    3. date/time
+    4. Author
+    5. Complete Snapshot
+
+[IMPORTANT] Git workflow commands -
+
+    git status
+        This command gives the status of most updated difference between the code and staging area.
+        The command will show changes done between your code and last staging.
+    
+    git add .
+        .                               adds all the files and folder
+        file.txt                        adds only the file mention
+        file1.txt file2.txt             adds the files named with spaces
+        *.exts                          adds all the file with .txt extension
+        This command gets your code files as mentioned in the command into the staging area.
+
+    git commit -m "message"
+        This command commits the staging area to the repository.
+        The comment is used to tag the commit with the short discription of changes.
