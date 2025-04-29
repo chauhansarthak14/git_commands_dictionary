@@ -5,6 +5,7 @@ Connecting GITHUB to your local repository
     Click on add new key, give the name to the key and then paste your clipboard into the SSH key field,
     Once done your pc will be authorised to push and pull to github repository
 
+
 Settings to configure your information and coding style
     git --version
         returns the current version of git on your OS
@@ -20,7 +21,7 @@ Settings to configure your information and coding style
     git config --global -e
         This command is used to open the git configuration file.
 
-Git Workflow
+Git Workflow - 
     [             PC                    ]     [    Githib    ]
 
     Code --------- Staging Area/ Index ---------- Repository
@@ -33,6 +34,9 @@ Commit Contains - Git is very efficient in storing content as it compresses it a
     5. Complete Snapshot
 
 [IMPORTANT] Git workflow commands -
+
+    git add README.md
+        This command adds readme.md file which is the best way to show the discription of project on github.
 
     git status
         This command gives the status of most updated difference between the code and staging area.
@@ -48,6 +52,15 @@ Commit Contains - Git is very efficient in storing content as it compresses it a
     git commit -m "message"
         This command commits the staging area to the repository.
         The comment is used to tag the commit with the short discription of changes.
+
+    git branch
+        Tells which branch you are on
+    "
+    git branch -M "name"
+        Rename the branch you are on or rename only the master branch need to check which.
+
+    git remote add origin "SSH url will be shown in your project code page"
+        this command addds the git remote origin to your local project.
     
-    git add README.md
-        This command adds readme.md file which is the best way to show the discription of project on github.
+    git push -u origin main
+        This command pushes the code to github repository from local repository to the added origin.
