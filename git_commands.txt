@@ -1,3 +1,10 @@
+Connecting GITHUB to your local repository
+    Run command ssh-keygen -t rsa -b 4096 -C "email"
+        this command generate the ssh key for your  pc
+    Then copy the SSH key into your clipboar and then go to settings on github on the right, go to SSH key,
+    Click on add new key, give the name to the key and then paste your clipboard into the SSH key field,
+    Once done your pc will be authorised to push and pull to github repository
+
 Settings to configure your information and coding style
     git --version
         returns the current version of git on your OS
@@ -41,3 +48,6 @@ Commit Contains - Git is very efficient in storing content as it compresses it a
     git commit -m "message"
         This command commits the staging area to the repository.
         The comment is used to tag the commit with the short discription of changes.
+    
+    git add README.md
+        This command adds readme.md file which is the best way to show the discription of project on github.
